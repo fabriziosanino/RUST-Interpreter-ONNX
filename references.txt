@@ -1,0 +1,33 @@
+ONNX repository:
+https://github.com/onnx/onnx
+
+ONNX concepts: 
+https://onnx.ai/onnx/intro/concepts.html
+
+ONNX structure description:
+https://github.com/onnx/onnx/blob/main/docs/IR.md
+
+ONNX ops:
+https://github.com/onnx/onnx/blob/970563917f6c22e7b2c5400c23cb794e8f52e428/onnx/reference/ops/op_conv.py#L11
+
+------------------------------------------------
+
+ONNX reader: 
+https://grpc.io/docs/protoc-installation/
+
+  - per compilare e usare il reader:
+  protoc --decode=onnx.ModelProto onnx.proto < NOME.onnx
+
+ONNX visualizer:
+https://netron.app/
+
+
+GENERATE STRUCT FROM .proto
+protoc --rust_out=path/to/output_dir path/to/your/file.proto
+
+------------------------------------------------
+How to Build Python .whl:
+
+    maturin build --interpreter python3.9
+
+    pip install <whl_name>.whl
